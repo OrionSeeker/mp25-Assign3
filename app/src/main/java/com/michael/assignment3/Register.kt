@@ -27,7 +27,7 @@ class Register : AppCompatActivity() {
             val pass = passInput.text.toString().trim()
             val pass2 = passInput2.text.toString().trim()
 
-            if (name.isEmpty() || email.isEmpty() || pass.isEmpty()){
+            if (name.isEmpty() || email.isEmpty() || pass.isEmpty() || pass2.isEmpty()){
                 Toast.makeText(this, "Nama, Email, dan Password Wajib Diisi!!!!!", Toast.LENGTH_SHORT).show()
             }
             else if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
